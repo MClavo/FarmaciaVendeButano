@@ -19,3 +19,12 @@ Posterioremente estos cambios se han añadido al repositorio local con `git add`
 - `git add .` para añadir los cambios
 - `git commit -m` "Actualizado el Readme con el ejercicio 5"
 - `git push` para subir los cambios
+
+## Ejercicio 7
+### Alumno 2
+- Creación de la rama con el comando `git branch ramaAlno2`
+- Cambio a la rama creada con el comando `git checkout ramaAlno2`
+- Cambio al nombre de la rama con el comando `git branch -m "ramaAlumno2"`
+
+## Ejercicio 8
+- Listamos las ramas con `git branch`, en este caso el asterisco se encuentra en la rama "ramaAlumno2" lo cual implica que actualmente nos encontramos en esa rama
