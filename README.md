@@ -27,4 +27,10 @@ Posterioremente estos cambios se han añadido al repositorio local con `git add`
 - Cambio al nombre de la rama con el comando `git branch -m "ramaAlumno2"`
 
 ## Ejercicio 8
-- Listamos las ramas con `git branch`, en este caso el asterisco se encuentra en la rama "ramaAlumno2" lo cual implica que actualmente nos encontramos en esa rama
+### Alumno 2
+- Listamos las ramas con `git branch` y se nos muestran 2 ramas, la rama "main" y la rama "ramaAlumno2" que son las 2 ramas locales. En este caso el asterisco se encuentra en la rama "ramaAlumno2" lo cual implica que actualmente nos encontramos en esa rama
+
+## Ejercicio 9
+### Alumno 2
+- Creamos el fichero manualmente y copiamos el contenido
+- Luego subimos los cambios localmente con `git add .` y `git commit -m "Añadiendo fichero cliente.java"`
