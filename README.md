@@ -19,3 +19,16 @@ Posterioremente estos cambios se han añadido al repositorio local con `git add`
 - `git add .` para añadir los cambios
 - `git commit -m` "Actualizado el Readme con el ejercicio 5"
 - `git push` para subir los cambios
+
+## Ejercicio 7
+### Alumno 1
+- `git checkout -b ramaAlumno1` Creo mi rama
+
+## Ejercicio 8
+### Alumno 1
+- `git branch` Listo las ramas y solo aparece la mia local y main dado que ninguno de los dos hemos subido los cambios. El asterisco indica la rama en la que estamos actualmente.
+
+## Ejercicio 9
+### Alumno 1
+- `git add .` añado los cambios
+- `git commit -m "Añadiendo fichero almacen_cli.java"` Hago el commit
