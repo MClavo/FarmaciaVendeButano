@@ -4,6 +4,10 @@
 
 **Alumno 2**: Federico López Pérez
 
+**Alumno 3**: Alejandro Cabo Vázquez
+
+**Alumno 4**: Zuleima Muñoz Jiménez
+
 **repositorio**: https://github.com/MClavo/FarmaciaVendeButano
 
 # Comandos Ejercicios
