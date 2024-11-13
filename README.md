@@ -36,5 +36,9 @@ Posterioremente estos cambios se han añadido al repositorio local con `git add`
 - Luego subimos los cambios localmente con `git add .` y `git commit -m "Añadiendo fichero cliente.java"`
 
 ## Ejercicio 10
-## Alumno 1
+## Alumno 2
 - Para esto tenemos que realizar el comando `git diff main` para ver las diferencias de nuestra rama con la rama principal. He tardado 30 segundos así que me he librado de la bronca.
+
+## Ejercicio 11
+## Alumno 2
+- Para realizar este ejercicio, hemos utilizado el comando `git checkout main` para movernos a la rama principal, `git pull` para asegurarnos de que estamos en la última versión y finalmente `git merge ramaAlumno2` para realizar la fusión.
