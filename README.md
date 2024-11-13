@@ -4,6 +4,8 @@
 
 **Alumno 2**: Federico López Pérez
 
+**repositorio**: https://github.com/MClavo/FarmaciaVendeButano
+
 # Comandos Ejercicios
 ## Ejercicio 4
 Para resolver el ejercicio 4, hemos decidido usar la extensión de VSCode para evitarnos tener que generar los tokens.
@@ -62,3 +64,8 @@ Lo único que podemos comprobar es la diferencia entre nuestra rama local y el m
 
 Para realizar los dos push, primero hay que resolver los problemas de conflicto del Readme.
 Hemos juntado los dos cambios realizados por los dos alumnos y ya
+
+# Ejercicio 12
+En nuestro caso no es necesario ya que estamos utilziando una herramienta que gestiona las cuentas de usuario de github y los tokens automáticamente.
+La herramienta que estamos utilizado es VSCode, y no hemos tenido ningún problema.
+**Para los logs hemos utilizado:**  `git log --graph --stat  --decorate --all > LogAlumnoX.txt`
