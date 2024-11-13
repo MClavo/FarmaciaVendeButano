@@ -78,8 +78,10 @@ La herramienta que estamos utilizado es VSCode, y no hemos tenido ningún proble
 ## Alumno 1
 - `git checkout -b exerimentación` creamos la rama de experimentación
 - `git push origin experimentación` subimos la rama de experimentación
+## Alumno 3
+- `git branch ramaAlumno3` creamos la rama de alumno 3.
+- `git push origin ramaAlumno3` subimos la rama al repositorio remoto.
 ## Alumno 4
 - `git branch ramaAlumno4` creamos la rama de alumno 4.
 - `git push origin ramaAlumno4` subimos la rama al repositorio remoto.
-
 
