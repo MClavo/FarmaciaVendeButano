@@ -74,8 +74,8 @@ En nuestro caso no es necesario ya que estamos utilziando una herramienta que ge
 La herramienta que estamos utilizado es VSCode, y no hemos tenido ningún problema.
 **Para los logs hemos utilizado:**  `git log --graph --stat  --decorate --all > LogAlumnoX.txt`
 
-#Ejercicio 15
-##Alumno 4
+# Ejercicio 15
+## Alumno 4
 - `git branch ramaAlumno4` creamos la rama de alumno 4.
 - `git push origin ramaAlumno4` subimos la rama al repositorio remoto.
 
