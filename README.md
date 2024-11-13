@@ -34,3 +34,7 @@ Posterioremente estos cambios se han añadido al repositorio local con `git add`
 ### Alumno 2
 - Creamos el fichero manualmente y copiamos el contenido
 - Luego subimos los cambios localmente con `git add .` y `git commit -m "Añadiendo fichero cliente.java"`
+
+## Ejercicio 10
+## Alumno 1
+- Para esto tenemos que realizar el comando `git diff main` para ver las diferencias de nuestra rama con la rama principal. He tardado 30 segundos así que me he librado de la bronca.
