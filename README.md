@@ -32,3 +32,10 @@ Posterioremente estos cambios se han añadido al repositorio local con `git add`
 ### Alumno 1
 - `git add .` añado los cambios
 - `git commit -m "Añadiendo fichero almacen_cli.java"` Hago el commit
+  
+
+# Ejercicio 10 
+## Alumno 1
+- `git diff main` miramos las diferencias con la rama main, porque al no estar subidos los cambios al repositorio remoto es imposible mirar las diferencias con el otro compañero. 
+Lo único que podemos comprobar es la diferencia entre nuestra rama local y el main. Tarde 10 segundos.
+#
