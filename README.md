@@ -60,5 +60,5 @@ Lo único que podemos comprobar es la diferencia entre nuestra rama local y el m
 ## Alumno 2
 - Para realizar este ejercicio, hemos utilizado el comando `git checkout main` para movernos a la rama principal, `git pull` para asegurarnos de que estamos en la última versión y finalmente `git merge ramaAlumno2` para realizar la fusión.
 
-Para realizar los dos push, primero hay que resolverlos problemas de conflicto del Readme.
+Para realizar los dos push, primero hay que resolver los problemas de conflicto del Readme.
 Hemos juntado los dos cambios realizados por los dos alumnos y ya
