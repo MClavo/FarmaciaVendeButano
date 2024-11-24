@@ -88,3 +88,7 @@ La herramienta que estamos utilizado es VSCode, y no hemos tenido ningún proble
 - `git branch ramaAlumno4` creamos la rama de alumno 4.
 - `git push origin ramaAlumno4` subimos la rama al repositorio remoto.
 
+# Ejercicio 16
+## Alumno 2
+- `git add .` Para añdir los cambios
+- `git commit -m 'Cambios en Pantalla.java'` Para subir los cambios 
