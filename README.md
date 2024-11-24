@@ -92,3 +92,7 @@ La herramienta que estamos utilizado es VSCode, y no hemos tenido ningún proble
 ## Alumno 2
 - `git add .` Para añdir los cambios
 - `git commit -m 'Cambios en Pantalla.java'` Para subir los cambios 
+
+# Ejercicio 17
+## Alumno 2
+- `git whatchanged --pretty=format:"commit %H%nAuthor: %an%nCommitter: %cn%nMessage: %s%n"` Es el comando utilizado.
