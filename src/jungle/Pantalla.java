@@ -421,3 +421,159 @@ public class Pantalla implements Serializable
 
 
 
+public static void consultar_cliente(Vector<Cliente> c)
+{
+int flag2,flag3;
+String conv;
+boolean entrada;
+try
+{
+ do
+ {
+ menu_consultar_cliente();
+ do
+ {
+ conv = s.next();
+ entrada = comprobar_entero(conv);
+ if(!entrada)
+ {
+ System.out.println("Introduzca un numero por favor");
+ System.out.println("");
+ }
+ }while(!entrada);
+ flag2 = Integer.parseInt(conv);
+ String cad;
+ String cad2;
+ Boolean sal = false;
+ switch(flag2)
+ {
+ case 1:try
+
+{
+ System.out.println("Introduzca el DNI del cliente: ");
+ System.out.println("--------------------------------------------");
+ cad = s.next();
+ cad = cad.toLowerCase();
+ for(int i = 0; i < c.size(); i++)
+ {
+ cad2 = c.get(i).getCod_cli();
+ if(cad2.equals(cad))
+ {
+ if(!sal)
+ {
+ System.out.println("Software FARMACIA-LA-JUNGLA : Detalles del
+cliente");
+ System.out.println("-----------------------------------------");
+ }
+ c.get(i).mostrar_detalles_cli();
+ sal = true;
+ }
+ }
+ if(sal)
+ {
+ do
+ {
+ System.out.println(" ");
+ System.out.println("0: Volver a la pantalla anterior");
+ System.out.println("--------------------------------------------");
+ System.out.println("Introduzca una opcion");
+ do
+ {
+ conv = s.next();
+ entrada = comprobar_entero(conv);
+ if(!entrada)
+ {
+ System.out.println("Introduzca un numero por favor");
+ System.out.println("");
+ }
+ }while(!entrada);
+ flag3 = Integer.parseInt(conv);
+ if(flag3 != 0)
+ {
+ System.out.println("Introduzca el numero 0 para salir, no pulse otro
+numero");
+ }
+ }while(flag3 != 0);
+ }
+ else
+ {
+ System.out.println("No existe ese cliente");
+ System.out.println("");
+ }
+ break;
+ }catch(Exception e1)
+ {
+System.out.println("No se ha podido ejecutar bien el caso 1 de la funcion
+consultar_cliente()");
+ }
+ case 2:try
+ {
+ System.out.println("Introduzca el DNI del cliente: ");
+ System.out.println("--------------------------------------------");
+ cad = s.next();
+ cad = cad.toLowerCase();
+ for(int i = 0; i < c.size(); i++)
+ {
+ cad2 = c.get(i).getCod_cli();
+ if(cad2.equals(cad))
+ {
+ if(!sal)
+ {
+ System.out.println("Software FARMACIA-LA-JUNGLA : Detalles del
+cliente");
+ System.out.println("-----------------------------------------");
+ }
+ //c.get(i).mostrar_historial_cli();
+ sal = true;
+ }
+ }
+ if(sal)
+ {
+ do
+ {
+ System.out.println("0: Volver a la pantalla anterior");
+ System.out.println("--------------------------------------------");
+ System.out.println("Introduzca una opcion");
+ do
+ {
+ conv = s.next();
+ entrada = comprobar_entero(conv);
+ if(!entrada)
+ {
+ System.out.println("Introduzca un numero por favor");
+ System.out.println("");
+ }
+ }while(!entrada);
+ flag3 = Integer.parseInt(conv);
+ if(flag3 != 0)
+ {
+ System.out.println("Introduzca el numero 0 para salir, no pulse otro
+numero");
+ }
+ }while(flag3 != 0);
+ }
+ else
+ {
+ System.out.println("No existe ese medicamento");
+ System.out.println("");
+ }
+ break;
+}catch(Exception e2)
+ {
+ System.out.println("No se ha podido ejecutar bien el caso 2 de la funcion
+consultar_cliente()");
+ }
+ case 0:break;
+ }
+ if(flag2 < 0 || flag2 > 2)
+ {
+ System.out.println("No existe esa opcion, por favor vuelva a intentarlo");
+ System.out.println("");
+ }
+ }while(flag2 != 0);
+}catch(Exception e)
+{
+ System.out.println("No se ha podido ejecutar bien la funcion
+consultar_cliente()");
+}
+}
