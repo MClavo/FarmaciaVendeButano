@@ -38,7 +38,7 @@ public String getGrupo_sanguineo()
 {
  return grupo_sanguineo;
 }
-8
+
 public void mostrar_detalles_cli()
 {
  try
@@ -51,8 +51,7 @@ public void mostrar_detalles_cli()
  System.out.println("Grupo sanguineo: " + this.grupo_sanguineo);
  }catch(Exception e)
  {
- System.out.println("No se ha podido ejecutar la funcion
-mostrar_detalles_cli()");
+ System.out.println("No se ha podido ejecutar la funcion mostrar_detalles_cli()");
  }
 }
 }
