@@ -18,8 +18,6 @@ public class Pantalla implements Serializable
 {
 	public static Scanner s = new Scanner(System.in);
 	
-	
-	
 	public static void main(String[] args) {
 		
 		FileOutputStream fos = null;
@@ -489,6 +487,87 @@ System.out.println("Error en funcion realizar_compra()");
 
 }
 
+public static void addMedicamento_Almacen(Almacen A){
+    String cad;
+    boolean entrada;
+    int flag;
+    float flag1;
+    Medicamento m = new Medicamento();
+    System.out.println("Introduzca el codigo del medicamento");
+
+    do{
+        cad = s.next();
+        entrada = comprobar_entero(cad);
+        if(!entrada){
+            System.out.println("Introduzca un numero por favor");
+            System.out.println("");
+        }
+    }while(!entrada);
+
+    flag = Integer.parseInt(cad);
+    m.setCod_med(flag);
+    System.out.println("Introduzca el nombre del medicamento");
+    cad = s.next();
+    cad = cad.toLowerCase();
+    m.setNombre_med(cad);
+    System.out.println("Introduzca la composicion del medicamento");
+    cad = s.next();
+    cad = cad.toLowerCase();
+    m.setComp_med(cad);
+    System.out.println("Introduzca la categoria del medicamento");
+    cad = s.next();
+    cad = cad.toLowerCase();
+    m.setCat_med(cad);
+    System.out.println("Introduzca el formato del medicamento");
+    cad = s.next();
+    cad = cad.toLowerCase();
+    m.setFormato_med(cad);
+    System.out.println("Introduzca (si) en caso de necesitar receta o (no) en caso contrario");
+    boolean sal = false;
+    boolean rec = true;
+    
+    do{
+        cad = s.next();
+        cad = cad.toLowerCase();
+        if(cad.equals("si") || cad.equals("no")){
+            if(cad.equals("no")){
+                rec = false;
+            }
+        sal = true;
+        }
+        else{
+            System.out.println("Introduce si o no, no introduzca otra cosa");
+        }
+    }while(!sal);
+    m.setReceta_med(rec);
+    System.out.println("Introduzca el stock del medicamento");
+    do{
+        cad = s.next();
+        entrada = comprobar_entero(cad);
+        if(!entrada){
+            System.out.println("Introduzca un numero por favor");
+            System.out.println("");
+        }
+    }while(!entrada);
+    flag = Integer.parseInt(cad);
+    m.setStock_med(flag);
+    System.out.println("Introduzca el precio unitario del medicamento");
+    do{
+        cad = s.next();
+        entrada = comprobar_entero(cad);
+        if(!entrada){
+            System.out.println("Introduzca un numero por favor");
+            System.out.println("");
+        }
+    }while(!entrada);
+    flag1 = Float.parseFloat(cad);
+    m.setPrecio_med(flag1);
+    A.introduce_medicamento_Almacen(m);
+    System.out.println("Medicamento en el almacen");
+    System.out.println("-----------------------------------------");
+    m.mostrar_detalles_med();
+    System.out.println("-----------------------------------------");
+}
 
 
 public static void consultar_cliente(Vector<Cliente> c)
