@@ -417,6 +417,60 @@ public class Pantalla implements Serializable
 	}
 	
 		
+public static void realizar_compra(Vector<Medicamento> v)
+{
+Compra c = new Compra();
+int flag1;
+String cad;
+boolean entrada;
+try
+{
+do
+{
+System.out.println("Software de FARMACIA-LA-JUNGLA: Realizar Compra");
+System.out.println("--------------------------------------------");
+System.out.println("1: Add medicamento a la compra");
+System.out.println("2: Eliminar medicamento de la compra");
+System.out.println("3: Finalizar compra y generar Ticket");
+System.out.println("0: Cancelar compra y volver a la pantalla anterior");
+System.out.println("--------------------------------------------");
+System.out.println("Introduzca una opcion: ");
+do
+{
+cad = s.next();
+entrada = comprobar_entero(cad);
+if(!entrada)
+{
+System.out.println("Introduzca un numero por favor");
+System.out.println("");
+}
+}while(!entrada);
+flag1 = Integer.parseInt(cad);
+switch(flag1)
+{
+case 1: addMedicamento(c,v);
+break;
+case 2: eliminar_medicamento(c,v);
+break;
+case 3: c.generateTicket_compra(); //Cambiar el txt a pdf
+flag1 = 0;
+break;
+case 0: cancelar_y_revertir_cambios(c,v);
+break;
+}
+if(flag1 < 0 || flag1 > 3)
+{
+System.out.println("No existe esa opcion, por favor vuelva a intentarlo");
+System.out.println("");
+}
+}while(flag1 != 0);
+}catch(Exception e)
+{
+System.out.println("Error en funcion realizar_compra()");
+}
+}
+
+
 }
 
 
