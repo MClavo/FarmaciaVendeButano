@@ -75,9 +75,17 @@ La herramienta que estamos utilizado es VSCode, y no hemos tenido ningún proble
 **Para los logs hemos utilizado:**  `git log --graph --stat  --decorate --all > LogAlumnoX.txt`
 
 # Ejercicio 15
+<<<<<<< HEAD
 ## Alumno 1
 - `git checkout -b exerimentación` creamos la rama de experimentación
 - `git push origin experimentación` subimos la rama de experimentación
+=======
+## Alumno 2
+- `git push origin ramaAlumno2` subir la rama al repositorio remoto
+- `git branch ramaInvestigacion` crear la rama de investigación
+- `git push origin ramaInvestigacion` submir la rama al repositorio remoto 
+
+>>>>>>> ramaAlumno2
 ## Alumno 3
 - `git branch ramaAlumno3` creamos la rama de alumno 3.
 - `git push origin ramaAlumno3` subimos la rama al repositorio remoto.
@@ -85,3 +93,10 @@ La herramienta que estamos utilizado es VSCode, y no hemos tenido ningún proble
 - `git branch ramaAlumno4` creamos la rama de alumno 4.
 - `git push origin ramaAlumno4` subimos la rama al repositorio remoto.
 
+# Ejercicio 16
+## Alumno 2
+- `git add .` Para añdir los cambios
+- `git commit -m 'Cambios en Pantalla.java'` Para subir los cambios 
+
+# Ejercicio 17
+- `git whatchanged --pretty=format:"commit %H%nAuthor: %an%nCommitter: %cn%nMessage: %s%n"` Es el comando utilizado.
