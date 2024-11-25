@@ -91,3 +91,23 @@ La herramienta que estamos utilizado es VSCode, y no hemos tenido ningún proble
 - `git push origin ramaAlumno4` subimos la rama al repositorio remoto.
 
 
+# Ejercicio 18
+## Alumno 3
+- `git checkout main` Vamos a la rama main
+- `git merge ramaAlumno 3` Unimos los cambios de la rama
+- `git push` Subimos los cambios
+## Alumno 2
+- `git checkout main` Vamos a la rama main
+- `git pull` Traemos los cambios
+- `git merge ramaAlumno 2` Unimos los cambios de la rama
+- `git push` Subimos los cambios
+## Alumno 4
+- `git checkout main` Vamos a la rama main
+- `git pull` Traemos los cambios
+- `git merge ramaAlumno 4` Unimos los cambios de la rama
+- `git push` Subimos los cambios
+## Alumno 1
+- `git checkout main` Vamos a la rama main
+- `git pull` Traemos los cambios
+- `git merge ramaAlumno 1` Unimos los cambios de la rama
+- `git push` Subimos los cambios
